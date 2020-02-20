@@ -7,3 +7,15 @@ Info:
 Pantallas pequeñas (usadas por ejemplo en netbooks): 1024 x 600
 Pantallas medianas: 1280 x 720 / 1280 x 800
 Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400 x 900 o 1600 x 1200.
+
+/* Pantallas grandes */
+@media (min-width: 1200px) { ... }
+
+/* Tablets en horizonal y pantallas normales */
+@media (min-width: 768px) and (max-width: 1199px) { ... }
+ 
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) { ... }
+
+/* Móviles en vertical */
+@media (max-width: 480px) { ... }

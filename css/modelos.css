@@ -161,11 +161,25 @@
 /* RESPONSIVE */
 
 
-/* Tablet vertical */
+/* Pantallas grandes */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+@media only screen and (min-width: 1200px) {}
 
-@media only screen and (max-width: 768px) {
+
+/* Tablets en horizonal y pantallas normales 
+
+Este es nuestro estándar
+@media (min-width: 768px) and (max-width: 1199px) {  }*/
+
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media only screen and (max-width: 767px) {}
+
+
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {
     /*Modelos coches*/
     #modelosGrid {
         margin: 0;
