@@ -1,0 +1,202 @@
+/* Variables colores */
+
+:root {
+    /* PRIMARIO */
+    --color-primary-0: #495353;
+    --color-primary-1: #1f2020;
+    --color-primary-2: #f1da16;
+    /* SECUNDARIO */
+    --color-secondary-1-0: #d5d7d6;
+    --color-secondary-1-1: #6b7577;
+    --color-secondary-1-2: #efe36b;
+    /* TERCIARIO */
+    --color-secondary-2-0: #8d9899;
+    --color-secondary-2-1: #848b8f;
+    --color-secondary-2-2: #f0e897;
+}
+
+
+/* Filtro lateral */
+
+#filtroLateral {
+    top: 20%;
+    width: 15%;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+
+/* DIV Filtro lateral */
+
+#filtroLateral div {
+    color: var(--color-primary-2);
+    background-color: var(--color-secondary-2-1);
+    margin: 0 10%;
+    padding: 25% 0;
+    border-radius: 5px;
+}
+
+
+/* Etiquetas seleccionables Filtro lateral */
+
+#filtroLateral div label {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+
+/* GRID */
+
+#modelosGrid {
+    /*background-color: var(--color-secondary-1-1);*/
+    padding: 2vw;
+    margin: 0 10% 0 15%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 1vw;
+}
+
+
+/* Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+/* Enlaces Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador a {
+    padding: 3em 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary-1);
+    transition: 0.3s;
+}
+
+
+/* Transformación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
+
+
+/* La animación color texto modelo coche */
+
+@keyframes colorTextoModeloCreciendo {
+    100% {
+        color: var(--color-secondary-1-0);
+    }
+}
+
+.modeloCocheVolador a:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px var(--color-secondary-1-0), -5px -5px 30px 15px var(--color-secondary-1-0);
+    animation-name: colorTextoModeloCreciendo;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+
+/* Color de fondo Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador a .colorFondoModeloCocheVolador {
+    z-index: -1;
+    position: absolute;
+    background-color: var(--color-primary-1);
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+}
+
+
+/* La animación color fondo modelo coche */
+
+@keyframes colorFondoModeloCreciendo {
+    100% {
+        height: 100%;
+    }
+}
+
+
+/* Animación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador a:hover .colorFondoModeloCocheVolador {
+    animation-name: colorFondoModeloCreciendo;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+}
+
+
+/* Imagen Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador a img {
+    width: 80%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* DIV Enlaces Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador a div {
+    /*background-color: var(--color-primary-1);
+    color: var(--color-secondary-1-0);*/
+}
+
+
+/* Títulos DIV Enlaces Modelo - ELEMENTO DEL GRID */
+
+.modeloCocheVolador a div * {
+    margin: 0;
+}
+
+
+/* RESPONSIVE */
+
+
+/* Tablet vertical */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+@media only screen and (max-width: 768px) {
+    /*Modelos coches*/
+    #modelosGrid {
+        margin: 0;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 10%;
+        grid-row-gap: 1vw;
+    }
+    /*Filtro*/
+    #filtroLateral {
+        position: relative;
+        display: block;
+        width: 100%;
+        z-index: 0;
+    }
+    #filtroLateral div {
+        margin: 2%;
+        background-color: var(--color-primary-2);
+        color: var(--color-primary-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2vw;
+    }
+    #filtroLateral div h3 {
+        margin: 0;
+        display: flex;
+        width: 100%;
+    }
+    #filtroLateral div label {
+        display: flex;
+        width: fit-content;
+    }
+}
