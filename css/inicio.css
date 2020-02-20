@@ -1,0 +1,164 @@
+/* Contenedor de Imágenes Slideshow */
+
+.contenedorImagenesSlideshow {
+    width: 50%;
+    /*height: 50vw;*/
+    position: relative;
+    margin: auto;
+}
+
+
+/* Recortar imágenes */
+
+
+/*
+.contenedorImagenesSlideshow .imagenesSlideshow,
+.contenedorImagenesSlideshow .imagenesSlideshow img {
+    height: 100%;
+}*/
+
+.contenedorImagenesSlideshow .imagenesSlideshow img {
+    /*clip-path: inset(10% 20% 15% 10%);*/
+    /*
+width: 100%;
+object-fit: cover;
+object-position: center center;
+*/
+}
+
+
+/* Siguiente y anterior botones Slideshow */
+
+.anteriorImagenSlideshow,
+.siguienteImagenSlideshow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Posición del botón "siguienteImagenSlideshow" a la derecha */
+
+.siguienteImagenSlideshow {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Hover, poner fondo negro */
+
+.anteriorImagenSlideshow:hover,
+.siguienteImagenSlideshow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* DEPRECATED */
+
+
+/* Caption text 
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+*/
+
+
+/* Texto números (x/3) */
+
+.textoNumerosSlideshow {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Puntos de las imágenes disponibles */
+
+#puntosImagenesSlideshow {
+    text-align: center;
+}
+
+
+/* Los puntos de indicación de la imagen */
+
+.puntoPosicionSlideshow {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.imagenActivaSlideshow,
+.puntoPosicionSlideshow:hover {
+    background-color: #717171;
+}
+
+
+/* Animación fade */
+
+.fadeImagenesSlideshow {
+    -webkit-animation-name: fadeImagenesSlideshow;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeImagenesSlideshow;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeImagenesSlideshow {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeImagenesSlideshow {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*
+    MEDIAQUERY
+*/
+
+
+/* On smaller screens, decrease text size */
+
+
+/*
+@media only screen and (max-width: 300px) {
+    .anteriorImagenSlideshow,
+    .siguienteImagenSlideshow,
+    .text {
+        font-size: 11px
+    }
+}
+*/

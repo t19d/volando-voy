@@ -1,0 +1,182 @@
+/*
+    Fuente predeterminada para los textos de la página.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+/* Variables colores */
+
+:root {
+    /* PRIMARIO */
+    --color-primary-0: #495353;
+    --color-primary-1: #1f2020;
+    --color-primary-2: #f1da16;
+    /* SECUNDARIO */
+    --color-secondary-1-0: #d5d7d6;
+    --color-secondary-1-1: #6b7577;
+    --color-secondary-1-2: #efe36b;
+    /* TERCIARIO */
+    --color-secondary-2-0: #8d9899;
+    --color-secondary-2-1: #848b8f;
+    --color-secondary-2-2: #f0e897;
+}
+
+
+/*
+    Body:
+        *margin: Sin margen.
+        *background-color: Color predeterminado de fondo.
+        *font-family: Fuente principal del contenido.
+*/
+
+body {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1vw;
+}
+
+
+/*
+    ---------------Menú de navegación principal
+    
+        *box-shadow: Sombra del menú.
+        *width: Ocupa todo el ancho.
+        *position: Se mueve todo en conjunto.
+        *z-index: Siempre visible en la capa superior.
+        *overflow: Lo que se sale no se ve.
+        *background-color: Color predeterminado del menú;
+        *display: Ocupa de forma flexible el ancho;
+*/
+
+.menuNavegacionPrincipal {
+    /*box-shadow: -1px 5px 5px 0px var(--color-secondary-2-2);*/
+    width: 100%;
+    position: fixed;
+    /* Se pone 50 para que siempre esté por encima de todo,
+    se podría cambiar por otro número más bajo. */
+    z-index: 50;
+    overflow: hidden;
+    background-color: var(--color-primary-0);
+    display: flex;
+}
+
+
+/* Titulos menú */
+
+.menuNavegacionPrincipal h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2vw;
+}
+
+
+/*
+    ---------------FIN (Menú de navegación principal)---------------
+*/
+
+
+/*
+    ---------------Enlaces Menú de navegación principal
+*/
+
+
+/*
+    Normal
+*/
+
+.menuNavegacionPrincipal a {
+    color: var(--color-secondary-1-0);
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+
+/*
+    Hover
+*/
+
+.menuNavegacionPrincipal a:hover {
+    background-color: var(--color-secondary-2-2);
+    color: var(--color-secondary-1-1);
+}
+
+
+/*
+    Active
+*/
+
+.menuNavegacionPrincipal a:active {
+    background-color: var(--color-secondary-1-2);
+    color: var(--color-primary-1);
+}
+
+
+/*
+    Página actual
+*/
+
+.menuNavegacionPrincipal a.paginaActual {
+    background-color: var(--color-primary-2);
+    color: var(--color-primary-1);
+}
+
+
+/*
+    Icono responsive
+*/
+
+.menuNavegacionPrincipal .iconoMenu {
+    display: none;
+}
+
+
+/*
+    ---------------FIN (Enlaces Menú de navegación principal)---------------
+*/
+
+
+/*
+    ---------------CONTENIDO PÁGINA
+*/
+
+.contenidoPagina {
+    padding-top: 15vmin;
+}
+
+
+/*
+    ---------------FIN (CONTENIDO PÁGINA)---------------
+*/
+
+
+/*
+    ---------------RESPONSIVE
+*/
+
+@media screen and (max-width: 768px) {
+    .menuNavegacionPrincipal {
+        display: block;
+    }
+    body {
+        font-size: 3vw;
+    }
+    .menuNavegacionPrincipal a {
+        display: none;
+    }
+    .menuNavegacionPrincipal .iconoMenu {
+        display: block;
+    }
+    .menuNavegacionPrincipal .iconoMenu img {
+        float: left;
+    }
+}
+
+
+/*
+    ---------------FIN (RESPONSIVE)---------------
+*/

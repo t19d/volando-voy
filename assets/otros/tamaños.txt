@@ -1,0 +1,9 @@
+Info:
+    https://desarrolloweb.com/articulos/medidas-estandar-pantallas-media-queries.html
+    https://uniwebsidad.com/foro/pregunta/184/medidas-recomendadas-para-los-media-queries-de-css/
+    
+
+
+Pantallas pequeñas (usadas por ejemplo en netbooks): 1024 x 600
+Pantallas medianas: 1280 x 720 / 1280 x 800
+Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400 x 900 o 1600 x 1200.

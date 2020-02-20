@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/inicio.css">
+    <link rel="icon" href="../assets/img/icono.png" />
+    <title>Inicio - Volando voy</title>
+</head>
+
+<body>
+    <header class="menuNavegacionPrincipal">
+        <a class="iconoMenu" onclick="myFunction()">
+            <img src="../assets/img/icons/menu_white.png">
+            <h2>Volando voy</h2>
+        </a>
+        <a href="inicio.html">
+            <img src="../assets/img/icono.png" height="70px">
+        </a>
+        <a href="modelos.html">
+            <h2>Modelos</h2>
+        </a>
+        <a href="ofertas.html">
+            <h2>Ofertas</h2>
+        </a>
+        <a href="renting.html">
+            <h2>Renting</h2>
+        </a>
+        <a href="piezas.html">
+            <h2>Piezas</h2>
+        </a>
+        <a href="contactenos.html">
+            <h2>Contáctenos</h2>
+        </a>
+        <a href="preguntas_frecuentes.html">
+            <h2>Preguntas frecuentes</h2>
+        </a>
+        <!--
+            <a href="javascript:void(0);" class="iconoMenu" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        -->
+    </header>
+
+    <div class="contenidoPagina">
+        <div class="contenedorImagenesSlideshow">
+
+            <div class="imagenesSlideshow fadeImagenesSlideshow">
+                <div class="textoNumerosSlideshow">1 / 3</div>
+                <img src="../assets/img/inicio/coche1.jpg" style="width:100%">
+            </div>
+
+            <div class="imagenesSlideshow fadeImagenesSlideshow">
+                <div class="textoNumerosSlideshow">2 / 3</div>
+                <img src="../assets/img/inicio/coche2.jpg" style="width:100%">
+            </div>
+
+            <div class="imagenesSlideshow fadeImagenesSlideshow">
+                <div class="textoNumerosSlideshow">3 / 3</div>
+                <img src="../assets/img/inicio/coche3.jpg" style="width:100%">
+            </div>
+
+            <a class="anteriorImagenSlideshow" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="siguienteImagenSlideshow" onclick="plusSlides(1)">&#10095;</a>
+
+            <div id="puntosImagenesSlideshow">
+                <span class="puntoPosicionSlideshow" onclick="currentSlide(1)"></span>
+                <span class="puntoPosicionSlideshow" onclick="currentSlide(2)"></span>
+                <span class="puntoPosicionSlideshow" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/inicio.js"></script>
+</body>
+
+</html>
