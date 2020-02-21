@@ -43,12 +43,18 @@
 }
 
 
+/* Contenido */
+
+section {
+    padding: 2vw;
+    margin: 0 10% 0 15%;
+}
+
+
 /* GRID */
 
 #modelosGrid {
     /*background-color: var(--color-secondary-1-1);*/
-    padding: 2vw;
-    margin: 0 10% 0 15%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-column-gap: 5%;
