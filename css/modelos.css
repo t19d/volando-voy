@@ -278,6 +278,11 @@ Este es nuestro estándar
     .footer {
         display: block;
     }
+    /* Contenido central de la página */
+    section {
+        padding: 0 6vw;
+        margin: 0;
+    }
     /* Modelos coches */
     #modelosGrid {
         margin: 0;
