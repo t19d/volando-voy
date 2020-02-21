@@ -57,7 +57,7 @@ body {
     se podría cambiar por otro número más bajo. */
     z-index: 50;
     overflow: hidden;
-    background-color: var(--color-primary-0);
+    background-color: var(--color-primary-1);
     display: flex;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .menuNavegacionPrincipal a:hover {
     background-color: var(--color-secondary-2-2);
-    color: var(--color-secondary-1-1);
+    color: var(--color-primary-0);
 }
 
 
