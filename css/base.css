@@ -154,6 +154,98 @@ body {
     ---------------FIN (CONTENIDO PÁGINA)---------------
 */
 
+/*
+    ---------------FOOTER
+*/
+
+/* Footer */
+
+.footer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+    color: var(--color-secondary-1-0);
+    background-color: var(--color-primary-1);
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footerDireccion {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footerDireccion h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.footer h2 {
+    font-size: 1.2rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer ul a {
+    color: var(--color-secondary-2-0);
+}
+
+.footerNavegacion {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footerEnviarCorreo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 1em;
+    max-width: max-content;
+    background-color: var(--color-secondary-2-0);
+    border-radius: 5px;
+    color: var(--color-primary-1);
+    font-size: 1em;
+}
+
+.legal {
+    color: var(--color-secondary-2-0);
+}
+
+/* Lo que ocupa cada cosa en el footer */
+
+.footerNavegacion>* {
+    flex: 1;
+}
+
+.footerDireccion {
+    flex: 1 0px;
+}
+
+.footerNavegacion {
+    flex: 2 0px;
+}
+
+/*
+    ---------------FIN (FOOTER)---------------
+*/
+
 
 /*
     ---------------RESPONSIVE
