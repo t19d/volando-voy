@@ -1,6 +1,6 @@
 /* Variables colores */
 
-:root {
+ºx:root {
     /* PRIMARIO */
     --color-primary-0: #495353;
     --color-primary-1: #1f2020;
@@ -14,7 +14,6 @@
     --color-secondary-2-1: #848b8f;
     --color-secondary-2-2: #f0e897;
 }
-
 
 /* Filtro lateral */
 
@@ -48,7 +47,6 @@
     width: 100%;
 }
 
-
 /* Contenido */
 
 section {
@@ -56,6 +54,70 @@ section {
     margin: 0 10% 0 15%;
 }
 
+/* PREUBAS */
+
+/* ORDENAR */
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    z-index: -1;
+}
+
+label {
+    position: relative;
+    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 1em;
+    line-height: 2;
+    cursor: pointer;
+}
+
+label::before {
+    box-sizing: border-box;
+    content: " ";
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid var(--color-secondary-1-0);
+    z-index: -1;
+}
+
+input[type="radio"]+label::before {
+    border-radius: 1em;
+}
+
+/* Checked */
+
+input[type="radio"]:checked+label {
+    color: var(--color-primary-1);
+}
+
+input[type="radio"]:checked+label::before {
+    top: 0;
+    width: 100%;
+    height: 2em;
+    background: var(--color-primary-2);
+}
+
+/* Transition */
+
+label, label::before {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+/*     */
 
 /* GRID */
 
@@ -67,7 +129,6 @@ section {
     grid-row-gap: 1vw;
 }
 
-
 /* Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador {
@@ -75,7 +136,6 @@ section {
     box-sizing: border-box;
     padding: 0;
 }
-
 
 /* Enlaces Modelo - ELEMENTO DEL GRID */
 
@@ -88,9 +148,7 @@ section {
     transition: 0.3s;
 }
 
-
 /* Transformación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
-
 
 /* La animación color texto modelo coche */
 
@@ -108,7 +166,6 @@ section {
     animation-duration: 1s;
 }
 
-
 /* Color de fondo Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a .colorFondoModeloCocheVolador {
@@ -123,7 +180,6 @@ section {
     height: 0;
 }
 
-
 /* La animación color fondo modelo coche */
 
 @keyframes colorFondoModeloCreciendo {
@@ -131,7 +187,6 @@ section {
         height: 100%;
     }
 }
-
 
 /* Animación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
 
@@ -141,7 +196,6 @@ section {
     animation-duration: .5s;
 }
 
-
 /* Imagen Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a img {
@@ -150,7 +204,6 @@ section {
     object-position: center center;
 }
 
-
 /* DIV Enlaces Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a div {
@@ -158,118 +211,26 @@ section {
     color: var(--color-secondary-1-0);*/
 }
 
-
 /* Títulos DIV Enlaces Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a div * {
     margin: 0;
 }
 
-
-/* Footer */
-
-.footer {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px;
-    color: var(--color-secondary-1-0);
-    background-color: var(--color-primary-1);
-    border-top: 1px solid #e5e5e5;
-}
-
-.footer>* {
-    flex: 1 100%;
-}
-
-.footerDireccion {
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-}
-
-.footerDireccion h1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-}
-
-.footer h2 {
-    font-size: 1.2rem;
-}
-
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer li {
-    line-height: 2em;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer ul a {
-    color: var(--color-secondary-2-0);
-}
-
-.footerNavegacion {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.footerEnviarCorreo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: .5em 1em;
-    max-width: max-content;
-    background-color: var(--color-secondary-2-0);
-    border-radius: 5px;
-    color: var(--color-primary-1);
-    font-size: 1em;
-}
-
-.legal {
-    color: var(--color-secondary-2-0);
-}
-
-
-/* Lo que ocupa cada cosa en el footer */
-
-.footerNavegacion>* {
-    flex: 1;
-}
-
-.footerDireccion {
-    flex: 1 0px;
-}
-
-.footerNavegacion {
-    flex: 2 0px;
-}
-
-
 /* RESPONSIVE */
-
 
 /* Pantallas grandes */
 
 @media only screen and (min-width: 1200px) {}
-
 
 /* Tablets en horizonal y pantallas normales 
 
 Este es nuestro estándar
 @media (min-width: 768px) and (max-width: 1199px) {  }*/
 
-
 /* Móviles en horizontal o tablets en vertical */
 
 @media only screen and (max-width: 767px) {}
-
 
 /* Móviles en vertical */
 
