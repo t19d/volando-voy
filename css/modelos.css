@@ -15,6 +15,7 @@
     --color-secondary-2-2: #f0e897;
 }
 
+
 /* Filtro lateral */
 
 #filtroLateral {
@@ -24,6 +25,7 @@
     position: fixed;
     z-index: 1;
 }
+
 
 /* FILTRAR Filtro lateral */
 
@@ -39,6 +41,7 @@
     border-radius: 5px;
 }
 
+
 /* Etiquetas seleccionables Filtro lateral */
 
 #filtroLateral div label {
@@ -47,6 +50,7 @@
     width: 100%;
 }
 
+
 /* Contenido */
 
 section {
@@ -54,14 +58,17 @@ section {
     margin: 0 10% 0 15%;
 }
 
+
 /* PREUBAS */
+
 
 /* ORDENAR */
 
-.group {
+#ordenarModelos {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-bottom: 2em;
 }
 
@@ -81,7 +88,7 @@ label {
 
 label::before {
     box-sizing: border-box;
-    content: " ";
+    content: "";
     position: absolute;
     top: 0.3em;
     left: 0;
@@ -96,6 +103,7 @@ input[type="radio"]+label::before {
     border-radius: 1em;
 }
 
+
 /* Checked */
 
 input[type="radio"]:checked+label {
@@ -109,15 +117,19 @@ input[type="radio"]:checked+label::before {
     background: var(--color-primary-2);
 }
 
+
 /* Transition */
 
-label, label::before {
+label,
+label::before {
     -webkit-transition: .25s all ease;
     -o-transition: .25s all ease;
     transition: .25s all ease;
 }
 
+
 /*     */
+
 
 /* GRID */
 
@@ -129,6 +141,7 @@ label, label::before {
     grid-row-gap: 1vw;
 }
 
+
 /* Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador {
@@ -136,6 +149,7 @@ label, label::before {
     box-sizing: border-box;
     padding: 0;
 }
+
 
 /* Enlaces Modelo - ELEMENTO DEL GRID */
 
@@ -148,7 +162,9 @@ label, label::before {
     transition: 0.3s;
 }
 
+
 /* Transformación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
+
 
 /* La animación color texto modelo coche */
 
@@ -166,6 +182,7 @@ label, label::before {
     animation-duration: 1s;
 }
 
+
 /* Color de fondo Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a .colorFondoModeloCocheVolador {
@@ -180,6 +197,7 @@ label, label::before {
     height: 0;
 }
 
+
 /* La animación color fondo modelo coche */
 
 @keyframes colorFondoModeloCreciendo {
@@ -187,6 +205,7 @@ label, label::before {
         height: 100%;
     }
 }
+
 
 /* Animación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
 
@@ -196,6 +215,7 @@ label, label::before {
     animation-duration: .5s;
 }
 
+
 /* Imagen Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a img {
@@ -204,6 +224,7 @@ label, label::before {
     object-position: center center;
 }
 
+
 /* DIV Enlaces Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a div {
@@ -211,26 +232,32 @@ label, label::before {
     color: var(--color-secondary-1-0);*/
 }
 
+
 /* Títulos DIV Enlaces Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a div * {
     margin: 0;
 }
 
+
 /* RESPONSIVE */
+
 
 /* Pantallas grandes */
 
 @media only screen and (min-width: 1200px) {}
+
 
 /* Tablets en horizonal y pantallas normales 
 
 Este es nuestro estándar
 @media (min-width: 768px) and (max-width: 1199px) {  }*/
 
+
 /* Móviles en horizontal o tablets en vertical */
 
 @media only screen and (max-width: 767px) {}
+
 
 /* Móviles en vertical */
 
