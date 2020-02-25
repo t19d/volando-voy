@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
-
 /* Variables colores */
 
 :root {
@@ -22,7 +21,6 @@
     --color-secondary-2-2: #f0e897;
 }
 
-
 /*
     Body:
         *margin: Sin margen.
@@ -35,7 +33,6 @@ body {
     font-family: 'Rajdhani', sans-serif;
     font-size: 1vw;
 }
-
 
 /*
     ---------------Menú de navegación principal
@@ -61,7 +58,6 @@ body {
     display: flex;
 }
 
-
 /* Titulos menú */
 
 .menuNavegacionPrincipal h2 {
@@ -70,16 +66,13 @@ body {
     padding: 0 1em;
 }
 
-
 /*
     ---------------FIN (Menú de navegación principal)---------------
 */
 
-
 /*
     ---------------Enlaces Menú de navegación principal
 */
-
 
 /*
     Normal
@@ -96,7 +89,6 @@ body {
     transition: 0.3s;
 }
 
-
 /*
     Hover
 */
@@ -105,7 +97,6 @@ body {
     background-color: var(--color-secondary-2-2);
     color: var(--color-primary-0);
 }
-
 
 /*
     Active
@@ -116,7 +107,6 @@ body {
     color: var(--color-primary-1);
 }
 
-
 /*
     Página actual
 */
@@ -126,7 +116,6 @@ body {
     color: var(--color-primary-1);
 }
 
-
 /*
     Icono responsive
 */
@@ -135,11 +124,9 @@ body {
     display: none;
 }
 
-
 /*
     ---------------FIN (Enlaces Menú de navegación principal)---------------
 */
-
 
 /*
     ---------------CONTENIDO PÁGINA
@@ -148,7 +135,6 @@ body {
 .contenidoPagina {
     padding-top: 15vmin;
 }
-
 
 /*
     ---------------FIN (CONTENIDO PÁGINA)---------------
@@ -246,12 +232,22 @@ body {
     ---------------FIN (FOOTER)---------------
 */
 
-
 /*
     ---------------RESPONSIVE
 */
 
-@media screen and (max-width: 768px) {
+/* Pantallas grandes */
+
+@media only screen and (min-width: 1200px) {}
+
+/* Tablets en horizonal y pantallas normales 
+
+Este es nuestro estándar
+@media (min-width: 768px) and (max-width: 1199px) {  }*/
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media only screen and (max-width: 767px) {
     .menuNavegacionPrincipal {
         display: block;
     }
@@ -269,6 +265,9 @@ body {
     }
 }
 
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {}
 
 /*
     ---------------FIN (RESPONSIVE)---------------
