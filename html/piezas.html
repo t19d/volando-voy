@@ -40,22 +40,22 @@
             <h2>Preguntas frecuentes</h2>
         </a>
     </header>
-    
     <div class="contenidoPagina">
         <nav id="filtroLateral">
-            <div>
-                <h3>Título filtro</h3>
-                <label><input type="checkbox">Tipo A</label>
-                <label><input type="checkbox">Tipo B</label>
-                <label><input type="checkbox">Tipo C</label>
-                <label><input type="checkbox">Tipo D</label>
-                <label><input type="checkbox">Tipo E</label>
-            </div>
+            <h3>Filtrar por</h3>
+            <ul id="listaFiltro">
+                <li><input type="checkbox" id="filtroConAlas" value="Con alas"><label for="filtroConAlas">Coches con
+                            alas</label></li>
+                <li><input type="checkbox" id="filtroSinAlas" value="Sin alas"><label for="filtroSinAlas">Coches sin
+                            alas</label></li>
+                <li><input type="checkbox" id="filtroRetractil" value="Retractil"><label for="filtroRetractil">Modo
+                            retractil</label></li>
+            </ul>
         </nav>
         <section>
             <div id="ordenarModelos">
                 <h3>Ordenar por</h3>
-                <input type="radio" name="ordenar" id="ordenarNovedad" />
+                <input type="radio" name="ordenar" id="ordenarNovedad" checked />
                 <label for="ordenarNovedad">Novedad</label>
                 <input type="radio" name="ordenar" id="ordenarNombre" />
                 <label for="ordenarNombre">Nombre</label>
