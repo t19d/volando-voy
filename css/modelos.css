@@ -1,3 +1,4 @@
+@import url('https://use.fontawesome.com/releases/v5.0.1/css/all.css');
 /* Variables colores */
 
 ºx:root {
@@ -15,41 +16,100 @@
     --color-secondary-2-2: #f0e897;
 }
 
-
 /* Filtro lateral */
 
 #filtroLateral {
     top: 20%;
     width: 15%;
-    left: 1%;
+    left: 0;
     position: fixed;
     z-index: 1;
 }
 
-
-/* FILTRAR Filtro lateral */
+/* DIV Filtro lateral */
 
 #filtroLateral div {
-    /*top: 20%;
-    width: 15%;
-    left: 1%;
-    position: fixed;
-    z-index: 1;*/
     color: var(--color-primary-2);
-    background-color: var(--color-secondary-2-1);
+    background-color: var(--color-primary-1);
+    margin: 0 10%;
     padding: 25% 0;
     border-radius: 5px;
 }
 
-
 /* Etiquetas seleccionables Filtro lateral */
 
+/*
 #filtroLateral div label {
     margin: auto;
     display: block;
     width: 100%;
 }
+*/
 
+#listaFiltro {
+    list-style: none;
+}
+
+#listaFiltro li {
+    display: block;
+}
+
+#listaFiltro li label {
+    display: inline-block;
+    background-color: var(--color-secondary-1-0);
+    border: 1px solid var(--color-primary-2);
+    color: var(--color-primary-1);
+    border-radius: 15px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    /*-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;*/
+    user-select: none;
+    /*-webkit-tap-highlight-color: transparent;*/
+    transition: all .2s;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+#listaFiltro li label::before {
+    border: none;
+    z-index: 2;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    /*-webkit-font-smoothing: antialiased;*/
+    font-weight: 900;
+    /*font-size: 12px;
+    padding: 2px 6px 2px 2px;*/
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+#listaFiltro li input[type="checkbox"]:checked+label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+#listaFiltro li input[type="checkbox"]:checked+label {
+    border: 1px solid var(--color-primary-1);
+    background-color: var(--color-primary-2);
+    color: var(--color-primary-1);
+    transition: all .2s;
+}
+
+#listaFiltro li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+#listaFiltro li input[type="checkbox"]:focus+label {
+    border: 1px solid var(--color-primary-0);
+}
 
 /* Contenido */
 
@@ -58,9 +118,7 @@ section {
     margin: 0 10% 0 15%;
 }
 
-
 /* PREUBAS */
-
 
 /* ORDENAR */
 
@@ -95,14 +153,13 @@ label::before {
     display: block;
     width: 1.4em;
     height: 1.4em;
-    border: 2px solid var(--color-secondary-1-0);
+    border: 2px solid var(--color-primary-2);
     z-index: -1;
 }
 
 input[type="radio"]+label::before {
     border-radius: 1em;
 }
-
 
 /* Checked */
 
@@ -112,24 +169,20 @@ input[type="radio"]:checked+label {
 
 input[type="radio"]:checked+label::before {
     top: 0;
-    width: 100%;
+    width: 110%;
     height: 2em;
     background: var(--color-primary-2);
 }
 
-
 /* Transition */
 
-label,
-label::before {
+label, label::before {
     -webkit-transition: .25s all ease;
     -o-transition: .25s all ease;
     transition: .25s all ease;
 }
 
-
 /*     */
-
 
 /* GRID */
 
@@ -141,7 +194,6 @@ label::before {
     grid-row-gap: 1vw;
 }
 
-
 /* Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador {
@@ -149,7 +201,6 @@ label::before {
     box-sizing: border-box;
     padding: 0;
 }
-
 
 /* Enlaces Modelo - ELEMENTO DEL GRID */
 
@@ -162,9 +213,7 @@ label::before {
     transition: 0.3s;
 }
 
-
 /* Transformación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
-
 
 /* La animación color texto modelo coche */
 
@@ -182,7 +231,6 @@ label::before {
     animation-duration: 1s;
 }
 
-
 /* Color de fondo Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a .colorFondoModeloCocheVolador {
@@ -197,7 +245,6 @@ label::before {
     height: 0;
 }
 
-
 /* La animación color fondo modelo coche */
 
 @keyframes colorFondoModeloCreciendo {
@@ -205,7 +252,6 @@ label::before {
         height: 100%;
     }
 }
-
 
 /* Animación HOVER Enlaces Modelo - ELEMENTO DEL GRID */
 
@@ -215,7 +261,6 @@ label::before {
     animation-duration: .5s;
 }
 
-
 /* Imagen Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a img {
@@ -224,7 +269,6 @@ label::before {
     object-position: center center;
 }
 
-
 /* DIV Enlaces Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a div {
@@ -232,36 +276,26 @@ label::before {
     color: var(--color-secondary-1-0);*/
 }
 
-
 /* Títulos DIV Enlaces Modelo - ELEMENTO DEL GRID */
 
 .modeloCocheVolador a div * {
     margin: 0;
 }
 
-
 /* RESPONSIVE */
-
 
 /* Pantallas grandes */
 
 @media only screen and (min-width: 1200px) {}
-
 
 /* Tablets en horizonal y pantallas normales 
 
 Este es nuestro estándar
 @media (min-width: 768px) and (max-width: 1199px) {  }*/
 
-
 /* Móviles en horizontal o tablets en vertical */
 
-@media only screen and (max-width: 767px) {}
-
-
-/* Móviles en vertical */
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     /* Footer */
     .footer {
         display: block;
@@ -305,3 +339,7 @@ Este es nuestro estándar
         width: fit-content;
     }
 }
+
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {}
