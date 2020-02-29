@@ -1,10 +1,34 @@
-.contenidoPagina {
-    margin-bottom: 1vw;
+/* Variables colores */
+
+:root {
+    /* PRIMARIO */
+    --color-primary-0: #495353;
+    --color-primary-1: #1f2020;
+    --color-primary-2: #f1da16;
+    /* SECUNDARIO */
+    --color-secondary-1-0: #d5d7d6;
+    --color-secondary-1-1: #6b7577;
+    --color-secondary-1-2: #efe36b;
+    /* TERCIARIO */
+    --color-secondary-2-0: #8d9899;
+    --color-secondary-2-1: #848b8f;
+    --color-secondary-2-2: #f0e897;
 }
 
-.contenidoPagina h2{
+
+/* Contenido central */
+
+.contenidoPagina {}
+
+
+/* Título del modelo */
+
+.contenidoPagina .tituloModelo {
     padding-left: 1%;
 }
+
+
+/* Imagen del modelo */
 
 .contenidoPrincipalModelo img {
     float: left;
@@ -18,26 +42,101 @@
     filter: blur(2px) grayscale(100%);
 }
 
+
+/* Descripción del modelo */
+
+.contenidoPrincipalModelo p {
+    margin-right: 1%;
+}
+
+
+/* Características del modelo */
+
 .contenidoSecundarioModelo {
     clear: both;
     text-align: center;
+    background-color: var(--color-primary-1);
+    width: fit-content;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: .4em;
+    box-shadow: 0 4px 8px 0 var(--color-secondary-1-1);
+    border-radius: 5px;
 }
 
+
+/* Título de las características */
+
+.contenidoSecundarioModelo h3 {
+    margin: 0 0 .2em 0;
+    color: var(--color-secondary-1-0);
+}
+
+
+/* Tabla de características del modelo */
+
 .contenidoSecundarioModelo table {
-    margin: auto;
     border-collapse: collapse;
 }
 
 .contenidoSecundarioModelo table * {
     padding: .3em;
-    border: 1px black solid;
+    border: 1px solid var(--color-primary-1);
+}
+
+.contenidoSecundarioModelo table tr:nth-child(odd) {
+    background-color: white;
 }
 
 .contenidoSecundarioModelo table tr:nth-child(even) {
-    background-color: gray;
+    background-color: var(--color-secondary-1-0);
 }
 
-.contenidoSecundarioModelo table tr:hover {
-    background-color: black;
-    color: white;
+.contenidoSecundarioModelo table tr td:first-child {
+    font-weight: bold;
 }
+
+
+/*.contenidoSecundarioModelo table tr:hover {
+    background-color: var(--color-secondary-2-0);
+}*/
+
+
+/* RESPONSIVE */
+
+
+/* Pantallas grandes */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/* Tablets en horizonal y pantallas normales 
+
+Este es nuestro estándar
+@media (min-width: 768px) and (max-width: 1199px) {  }*/
+
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media only screen and (max-width: 767px) {
+    .contenidoPrincipalModelo img {
+        float: none;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        transition: all .2s;
+    }
+    .contenidoPagina .tituloModelo {
+        text-align: center;
+    }
+    .contenidoPrincipalModelo p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {}
