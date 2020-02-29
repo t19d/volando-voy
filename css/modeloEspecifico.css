@@ -54,6 +54,7 @@
     column-rule-color: var(--color-primary-2);*/
     column-rule: solid 1px var(--color-primary-2);
     column-span: all;
+    font-variant: small-caps;
 }
 
 
