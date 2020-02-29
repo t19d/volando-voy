@@ -47,6 +47,22 @@
 
 .contenidoPrincipalModelo p {
     margin-right: 1%;
+    column-count: 2;
+    column-gap: 1%;
+    /*column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: var(--color-primary-2);*/
+    column-rule: solid 1px var(--color-primary-2);
+    column-span: all;
+}
+
+
+/* Poner letra capital */
+
+.contenidoPrincipalModelo p::first-letter {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
 }
 
 
@@ -133,6 +149,7 @@ Este es nuestro estándar
     .contenidoPrincipalModelo p {
         margin-left: 5%;
         margin-right: 5%;
+        column-count: 1;
     }
 }
 
