@@ -1,0 +1,135 @@
+/* Variables colores */
+
+:root {
+    /* PRIMARIO */
+    --color-primary-0: #495353;
+    --color-primary-1: #1f2020;
+    --color-primary-2: #f1da16;
+    /* SECUNDARIO */
+    --color-secondary-1-0: #d5d7d6;
+    --color-secondary-1-1: #6b7577;
+    --color-secondary-1-2: #efe36b;
+    /* TERCIARIO */
+    --color-secondary-2-0: #8d9899;
+    --color-secondary-2-1: #848b8f;
+    --color-secondary-2-2: #f0e897;
+}
+
+.contenidoPagina {
+    text-align: center;
+}
+
+.contenidoPagina h1 {
+    text-transform: uppercase;
+}
+
+#gifAnimado {
+    width: 50%;
+    border: 1px solid var(--color-secondary-2-2);
+    border-radius: 25px;
+}
+
+#formularioContactenos {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 1vw auto 1vw auto;
+    padding: 1vw;
+    background-color: var(--color-primary-1);
+    color: var(--color-secondary-1-0);
+    box-shadow: 0 4px 8px 0 var(--color-secondary-1-1);
+    border-radius: 5px;
+}
+
+#formularioContactenos .fila:not(:last-child) {
+    width: 70%;
+    margin-bottom: .5vw;
+    padding-bottom: .5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-primary-2);
+}
+
+#formularioContactenos .fila:not(:last-child) label {
+    font-weight: bold;
+    width: 40%;
+}
+
+#formularioContactenos .fila>input[type="text"],
+#formularioContactenos .fila select,
+#formularioContactenos .fila textarea {
+    padding-left: .3em;
+    box-sizing: border-box;
+    width: 120%;
+    outline: none;
+    border: 1px solid var(--color-secondary-1-0);
+}
+
+#formularioContactenos .fila>input[type="text"]::placeholder,
+#formularioContactenos .fila textarea::placeholder {
+    color: var(--color-secondary-1-1);
+}
+
+#formularioContactenos .fila>input[type="text"]:focus,
+#formularioContactenos .fila select:focus,
+#formularioContactenos .fila textarea:focus {
+    background-color: var(--color-primary-1);
+    color: var(--color-primary-2);
+}
+
+input[type="submit"] {
+    border: none;
+    background: var(--color-primary-2);
+    border: 1px solid var(--color-primary-1);
+    cursor: pointer;
+    padding: 6px;
+    width: 150%;
+}
+
+input[type="submit"]:hover {
+    transition: .2s all;
+    border: 1px solid var(--color-secondary-1-0);
+    background: var(--color-primary-1);
+    color: var(--color-primary-2);
+}
+
+
+/* RESPONSIVE */
+
+
+/* Pantallas grandes */
+
+@media only screen and (min-width: 1200px) {
+    #gifAnimado {
+        width: 30%;
+    }
+    #formularioContactenos {
+        width: 40%;
+    }
+}
+
+
+/* Tablets en horizonal y pantallas normales 
+
+Este es nuestro estándar
+@media (min-width: 768px) and (max-width: 1199px) {  }*/
+
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media only screen and (max-width: 767px) {
+    #gifAnimado {
+        width: 60%;
+    }
+    #formularioContactenos {
+        width: 80%;
+    }
+}
+
+
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {}

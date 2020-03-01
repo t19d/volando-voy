@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/contactenos.css">
+    <link rel="icon" href="../assets/img/icono.png" />
+    <title>Inicio - Volando voy</title>
+</head>
+
+<body>
+    <header class="menuNavegacionPrincipal">
+        <a class="iconoMenu" onclick="myFunction()">
+            <img src="../assets/img/icons/menu_white.png">
+            <h2>Volando voy</h2>
+        </a>
+        <a href="inicio.html">
+            <img src="../assets/img/icono.png" height="70px">
+        </a>
+        <a href="modelos.html">
+            <h2>Modelos</h2>
+        </a>
+        <a href="ofertas.html">
+            <h2>Ofertas</h2>
+        </a>
+        <a href="renting.html">
+            <h2>Renting</h2>
+        </a>
+        <a href="piezas.html">
+            <h2>Piezas</h2>
+        </a>
+        <a href="contactenos.html" class="paginaActual">
+            <h2>Contáctenos</h2>
+        </a>
+        <a href="preguntas_frecuentes.html">
+            <h2>Preguntas frecuentes</h2>
+        </a>
+        <!--
+            <a href="javascript:void(0);" class="iconoMenu" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        -->
+    </header>
+
+    <div class="contenidoPagina">
+        <h1>Volando voy</h1>
+        <img id="gifAnimado" src="../assets/img/volador.gif" />
+        <form id="formularioContactenos" action="" method="POST">
+            <div class="fila">
+                <label for="nombreFormulario">Nombre</label>
+                <input required type="text" id="nombreFormulario" name="nombreFormulario" placeholder="Nombre...">
+            </div>
+            <div class="fila">
+                <label for="apellidosFormulario">Apellidos</label>
+                <input required type="text" id="apellidosFormulario" name="apellidosFormulario" placeholder="Apellidos...">
+            </div>
+            <div class="fila">
+                <label for="paisFormulario">País</label>
+                <select id="paisFormulario" name="paisFormulario">
+                        <option value="australia">España</option>
+                        <option value="canada">Portugal</option>
+                        <option value="usa">Andorra</option>
+                </select>
+            </div>
+            <div class="fila">
+                <label for="mensajeFormulario">Mensaje</label>
+                <textarea required id="mensajeFormulario" name="mensajeFormulario" placeholder="Escribe un mensaje... (máximo 230 caracteres)" maxlength="230"></textarea>
+            </div>
+            <div class="fila">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footerDireccion">
+            <h1>Volando voy</h1>
+
+            <h2>Contacto</h2>
+
+            <div>
+                <p>12345 Avenida Calle, Cientocincuenta</p>
+                <a class="footerEnviarCorreo" href="mailto:a@a.a">Envíanos un correo</a>
+            </div>
+        </div>
+
+        <ul class="footerNavegacion">
+            <li>
+                <h2>Novedades</h2>
+
+                <ul>
+                    <li>
+                        <a href="modelos/modelos_modelo1.html">Modelo 1</a>
+                    </li>
+
+                    <li>
+                        <a href="modelos/modelos_modelo1.html">Modelo 2</a>
+                    </li>
+
+                    <li>
+                        <a href="modelos/modelos_modelo1.html">Modelo 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>Más vendidos</h2>
+                <ul>
+                    <li>
+                        <a href="modelos/modelos_modelo1.html">Modelo 1</a>
+                    </li>
+
+                    <li>
+                        <a href="modelos/modelos_modelo1.html">Modelo 2</a>
+                    </li>
+
+                    <li>
+                        <a href="modelos/modelos_modelo1.html">Modelo 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>2020 Ninguno. Ningún derecho reservado.</p>
+        </div>
+    </footer>
+    <script src="../js/inicio.js"></script>
+</body>
+
+</html>
