@@ -52,11 +52,11 @@
         <form id="formularioContactenos" action="" method="POST">
             <div class="fila">
                 <label for="nombreFormulario">Nombre</label>
-                <input required type="text" id="nombreFormulario" name="nombreFormulario" placeholder="Nombre...">
+                <input minlength="1" required type="text" id="nombreFormulario" name="nombreFormulario" placeholder="Nombre...">
             </div>
             <div class="fila">
                 <label for="apellidosFormulario">Apellidos</label>
-                <input required type="text" id="apellidosFormulario" name="apellidosFormulario" placeholder="Apellidos...">
+                <input minlength="1" required type="text" id="apellidosFormulario" name="apellidosFormulario" placeholder="Apellidos...">
             </div>
             <div class="fila">
                 <label for="paisFormulario">País</label>
@@ -68,7 +68,7 @@
             </div>
             <div class="fila">
                 <label for="mensajeFormulario">Mensaje</label>
-                <textarea required id="mensajeFormulario" name="mensajeFormulario" placeholder="Escribe un mensaje... (máximo 230 caracteres)" maxlength="230"></textarea>
+                <textarea pattern="*{1,230}" title="Máximo 230 caracteres y mínimo 1" minlength="1" maxlength="230" required id="mensajeFormulario" name="mensajeFormulario" placeholder="Escribe un mensaje..."></textarea>
             </div>
             <div class="fila">
                 <input type="submit" value="Enviar">
