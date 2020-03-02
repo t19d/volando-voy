@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/inicio.css">
     <link rel="icon" href="../assets/img/icono.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Inicio - Volando voy</title>
 </head>
 
@@ -51,21 +52,35 @@
 
             <div class="imagenesSlideshow fadeImagenesSlideshow">
                 <div class="textoNumerosSlideshow">1 / 3</div>
-                <img src="../assets/img/inicio/coche6-1.jpg">
+                <img src="../assets/img/inicio/coche6-1.jpg" usemap="#flechas">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem laboriosam aliquam.
+                    Facilis velit optio voluptates asperiores dolores modi magni fugit expedita quod sint, itaque,
+                    possimus, porro ut totam doloribus!
+                </p>
             </div>
 
             <div class="imagenesSlideshow fadeImagenesSlideshow">
                 <div class="textoNumerosSlideshow">2 / 3</div>
-                <img src="../assets/img/inicio/coche5-1.jpg">
+                <img src="../assets/img/inicio/coche5-1.jpg" usemap="#flechas">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem laboriosam aliquam.
+                    Facilis velit optio voluptates asperiores dolores modi magni fugit expedita quod sint, itaque,
+                    possimus, porro ut totam doloribus!
+                </p>
             </div>
 
             <div class="imagenesSlideshow fadeImagenesSlideshow">
                 <div class="textoNumerosSlideshow">3 / 3</div>
-                <img src="../assets/img/inicio/coche4-1.jpg">
+                <img src="../assets/img/inicio/coche4-1.jpg" usemap="#flechas">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem laboriosam aliquam.
+                    Facilis velit optio voluptates asperiores dolores modi magni fugit expedita quod sint, itaque,
+                    possimus, porro ut totam doloribus!
+                </p>
             </div>
 
-            <a class="anteriorImagenSlideshow" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="siguienteImagenSlideshow" onclick="plusSlides(1)">&#10095;</a>
+            <map name="flechas">
+                <area shape="rect" coords="0,0,800,436" alt="Izquierda" class="izquierda anteriorImagenSlideshow">
+                <area shape="rect" coords="800,0,1600,436" alt="Derecha" class="derecha siguienteImagenSlideshow">
+            </map>
 
             <div id="puntosImagenesSlideshow">
                 <span class="puntoPosicionSlideshow" onclick="currentSlide(1)"></span>
