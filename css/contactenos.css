@@ -15,13 +15,19 @@
     --color-secondary-2-2: #f0e897;
 }
 
+/* Contenido principal de la página */
+
 .contenidoPagina {
     text-align: center;
 }
 
+/* Título de contáctenos */
+
 .contenidoPagina h1 {
     text-transform: uppercase;
 }
+
+/* GIF de contáctenos */
 
 #gifAnimado {
     width: 50%;
@@ -29,6 +35,15 @@
     border-radius: 25px;
     filter: saturate(2);
 }
+
+/* Párrafo de contáctenos */
+
+#textoContactenos{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+/* Formulario */
 
 #formularioContactenos {
     width: 50%;
@@ -59,9 +74,7 @@
     width: 40%;
 }
 
-#formularioContactenos .fila>input[type="text"],
-#formularioContactenos .fila select,
-#formularioContactenos .fila textarea {
+#formularioContactenos .fila>input[type="text"], #formularioContactenos .fila select, #formularioContactenos .fila textarea {
     padding-left: .3em;
     box-sizing: border-box;
     width: 120%;
@@ -69,14 +82,11 @@
     border: 1px solid var(--color-secondary-1-0);
 }
 
-#formularioContactenos .fila>input[type="text"]::placeholder,
-#formularioContactenos .fila textarea::placeholder {
+#formularioContactenos .fila>input[type="text"]::placeholder, #formularioContactenos .fila textarea::placeholder {
     color: var(--color-secondary-1-1);
 }
 
-#formularioContactenos .fila>input[type="text"]:focus,
-#formularioContactenos .fila select:focus,
-#formularioContactenos .fila textarea:focus {
+#formularioContactenos .fila>input[type="text"]:focus, #formularioContactenos .fila select:focus, #formularioContactenos .fila textarea:focus {
     background-color: var(--color-primary-1);
     color: var(--color-primary-2);
 }
@@ -97,9 +107,7 @@ input[type="submit"]:hover {
     color: var(--color-primary-2);
 }
 
-
 /* RESPONSIVE */
-
 
 /* Pantallas grandes */
 
@@ -112,12 +120,10 @@ input[type="submit"]:hover {
     }
 }
 
-
 /* Tablets en horizonal y pantallas normales 
 
 Este es nuestro estándar
 @media (min-width: 768px) and (max-width: 1199px) {  }*/
-
 
 /* Móviles en horizontal o tablets en vertical */
 
@@ -129,7 +135,6 @@ Este es nuestro estándar
         width: 80%;
     }
 }
-
 
 /* Móviles en vertical */
 
