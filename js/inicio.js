@@ -37,3 +37,13 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+$(document).ready(function () {
+    $(".izquierda").click(function () {
+        plusSlides(-1);
+    });
+    $(".derecha").click(function () {
+        plusSlides(1);
+    });
+});
+
