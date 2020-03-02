@@ -1,11 +1,87 @@
-.respuesta{
-    display: none;
-    font-size: 1.5vw;
-    border: 1px solid black;
+/* Variables colores */
+
+:root {
+    /* PRIMARIO */
+    --color-primary-0: #495353;
+    --color-primary-1: #1f2020;
+    --color-primary-2: #f1da16;
+    /* SECUNDARIO */
+    --color-secondary-1-0: #d5d7d6;
+    --color-secondary-1-1: #6b7577;
+    --color-secondary-1-2: #efe36b;
+    /* TERCIARIO */
+    --color-secondary-2-0: #8d9899;
+    --color-secondary-2-1: #848b8f;
+    --color-secondary-2-2: #f0e897;
 }
 
-button{
-    font-size: 1.25vw;
+.contenidoPagina{
+    text-align: center;
+}
+
+.respuesta{
+    display: none;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 1vw;
+}
+
+#contenedorPreguntas{
+    margin: 1vw 0 1vw 0;
+}
+
+#contenedorPreguntas button{
+    font-size: 1.5em;
     display: flex;
     align-items: center;
+
+    /* david */
+    width: 100%;
+    justify-content: center;
+    height: 4vw;
+    border: none;
+    background-color: var(--color-primary-1);
+    color: var(--color-secondary-1-0);
+    outline: none;
 }
+
+#contenedorPreguntas button:not(:last-child){
+    border-bottom: 1px solid var(--color-primary-2);
+}
+
+#contenedorPreguntas button:focus{
+    border-bottom: 1px dotted var(--color-primary-2);
+}
+
+/* RESPONSIVE */
+
+
+/* Pantallas grandes */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/* Tablets en horizonal y pantallas normales 
+
+Este es nuestro estándar
+@media (min-width: 768px) and (max-width: 1199px) {  }*/
+
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media only screen and (max-width: 767px) {
+    #contenedorPreguntas button{
+        font-size: .5em;
+    }
+    .respuesta{
+        font-size: .5em;
+    }
+    #contenedorPreguntas img{
+        width: 3.5vw;
+    }
+}
+
+
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {}
