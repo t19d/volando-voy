@@ -90,24 +90,6 @@ body {
 }
 
 /*
-    Hover
-*/
-
-.menuNavegacionPrincipal a:hover {
-    background-color: var(--color-secondary-2-2);
-    color: var(--color-primary-0);
-}
-
-/*
-    Active
-*/
-
-.menuNavegacionPrincipal a:active {
-    background-color: var(--color-secondary-1-2);
-    color: var(--color-primary-1);
-}
-
-/*
     Página actual
 */
 
@@ -238,12 +220,48 @@ body {
 
 /* Pantallas grandes */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    /*
+        Hover
+    */
+    
+    .menuNavegacionPrincipal a:hover {
+        background-color: var(--color-secondary-2-2);
+        color: var(--color-primary-0);
+    }
+    
+    /*
+        Active
+    */
+    
+    .menuNavegacionPrincipal a:active {
+        background-color: var(--color-secondary-1-2);
+        color: var(--color-primary-1);
+    }
+}
 
 /* Tablets en horizonal y pantallas normales 
 
-Este es nuestro estándar
-@media (min-width: 768px) and (max-width: 1199px) {  }*/
+Este es nuestro estándar*/
+@media (min-width: 768px) and (max-width: 1199px) { 
+    /*
+        Hover
+    */
+    
+    .menuNavegacionPrincipal a:hover {
+        background-color: var(--color-secondary-2-2);
+        color: var(--color-primary-0);
+    }
+    
+    /*
+        Active
+    */
+    
+    .menuNavegacionPrincipal a:active {
+        background-color: var(--color-secondary-1-2);
+        color: var(--color-primary-1);
+    }
+}
 
 /* Móviles en horizontal o tablets en vertical */
 
@@ -252,6 +270,12 @@ Este es nuestro estándar
         display: block;
     }
     body {
+        font-size: 3vw;
+    }
+    .menuNavegacionPrincipal h2 {
+        font-size: 3vw;
+    }
+    .menuNavegacionPrincipal h1 {
         font-size: 3vw;
     }
     .menuNavegacionPrincipal a {
@@ -263,6 +287,15 @@ Este es nuestro estándar
     .menuNavegacionPrincipal .iconoMenu img {
         float: left;
     }
+    /*
+    ---------------Mostrar Menú de navegación principal
+    */
+    .menuDesplegado a{
+        display: block;
+    }
+    /*
+    ---------------FIN (Mostrar Menú de navegación principal)---------------
+    */
 }
 
 /* Móviles en vertical */
