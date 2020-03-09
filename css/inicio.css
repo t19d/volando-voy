@@ -164,3 +164,31 @@
 .imagenesSlideshow img{
     width: 100%;
 }
+
+/* RESPONSIVE */
+
+/* Pantallas grandes */
+
+@media only screen and (min-width: 1200px) {}
+
+/* Tablets en horizonal y pantallas normales 
+
+Este es nuestro estándar
+@media (min-width: 768px) and (max-width: 1199px) {  }*/
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media only screen and (max-width: 767px) {
+    /* Footer */
+    .footer {
+        display: block;
+    }
+    
+    .contenedorImagenesSlideshow, .imagenesSlideshow{
+        display: block;
+    }
+}
+
+/* Móviles en vertical */
+
+@media only screen and (max-width: 480px) {}
