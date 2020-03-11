@@ -399,10 +399,9 @@ Este es nuestro estándar
     /* Filtro */
     #filtroLateral {
         position: relative;
-        display: block;
         width: 100%;
         z-index: 0;
-        background-color: var(--color-primary-2);
+        background-color: var(--color-primary-1);
         color: var(--color-primary-1);
         display: flex;
         justify-content: center;
@@ -411,8 +410,8 @@ Este es nuestro estándar
         padding: 2vw;
     }
     #filtroLateral h3 {
+        color: var(--color-secondary-1-0);
         margin: 0;
-        display: flex;
         width: 100%;
     }
     #filtroLateral label {
