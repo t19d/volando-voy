@@ -210,6 +210,10 @@ Este es nuestro estándar
     .textoNumerosSlideshow {
         display: none;
     }
+    /* Ocultar mapa para móviles */
+    map {
+        display: none;
+    }
 }
 
 
