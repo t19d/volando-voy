@@ -6,11 +6,13 @@
     position: relative;
 }
 
-.imagenesSlideshow{
+.imagenesSlideshow {
     text-align: center;
 }
 
+
 /* Recortar imágenes */
+
 
 /*
 .contenedorImagenesSlideshow .imagenesSlideshow,
@@ -24,7 +26,9 @@
     object-position: center center;
 }
 
+
 /* Siguiente y anterior botones Slideshow */
+
 
 /*.anteriorImagenSlideshow, .siguienteImagenSlideshow {
     cursor: pointer;
@@ -41,13 +45,14 @@
     user-select: none;
 }*/
 
-.anteriorImagenSlideshow:hover{
+.anteriorImagenSlideshow:hover {
     cursor: url("../assets/img/icons/arrow_left_black.png"), pointer;
 }
 
-.siguienteImagenSlideshow:hover{
+.siguienteImagenSlideshow:hover {
     cursor: url("../assets/img/icons/arrow_right_black.png"), pointer;
 }
+
 
 /* Posición del botón "siguienteImagenSlideshow" a la derecha */
 
@@ -56,13 +61,17 @@
     border-radius: 3px 0 0 3px;
 }
 
+
 /* Hover, poner fondo negro */
 
-.anteriorImagenSlideshow:hover, .siguienteImagenSlideshow:hover {
+.anteriorImagenSlideshow:hover,
+.siguienteImagenSlideshow:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* DEPRECATED */
+
 
 /* Caption text 
 
@@ -78,6 +87,7 @@
 
 */
 
+
 /* Texto números (x/3) */
 
 .textoNumerosSlideshow {
@@ -89,11 +99,13 @@
     background-color: #000;
 }
 
+
 /* Puntos de las imágenes disponibles */
 
 #puntosImagenesSlideshow {
     text-align: center;
 }
+
 
 /* Los puntos de indicación de la imagen */
 
@@ -108,9 +120,11 @@
     transition: background-color 0.6s ease;
 }
 
-.imagenActivaSlideshow, .puntoPosicionSlideshow:hover {
+.imagenActivaSlideshow,
+.puntoPosicionSlideshow:hover {
     background-color: #717171;
 }
+
 
 /* Animación fade */
 
@@ -139,17 +153,18 @@
     }
 }
 
-#izquierda{
+#izquierda {
     background-color: black;
 }
-
 
 
 /*
     MEDIAQUERY
 */
 
+
 /* On smaller screens, decrease text size */
+
 
 /*
 @media only screen and (max-width: 300px) {
@@ -161,20 +176,24 @@
 }
 */
 
-.imagenesSlideshow img{
+.imagenesSlideshow img {
     width: 100%;
 }
 
+
 /* RESPONSIVE */
+
 
 /* Pantallas grandes */
 
 @media only screen and (min-width: 1200px) {}
 
+
 /* Tablets en horizonal y pantallas normales 
 
 Este es nuestro estándar
 @media (min-width: 768px) and (max-width: 1199px) {  }*/
+
 
 /* Móviles en horizontal o tablets en vertical */
 
@@ -183,11 +202,16 @@ Este es nuestro estándar
     .footer {
         display: block;
     }
-    
-    .contenedorImagenesSlideshow, .imagenesSlideshow{
+    .contenedorImagenesSlideshow,
+    .imagenesSlideshow {
         display: block;
     }
+    /* Ocultar número de foto */
+    .textoNumerosSlideshow {
+        display: none;
+    }
 }
+
 
 /* Móviles en vertical */
 
