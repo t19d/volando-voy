@@ -101,7 +101,7 @@
 
 .contenidoSecundarioModelo table * {
     padding: .3em;
-    border: 1px solid var(--color-primary-1);
+    /*border: 1px solid var(--color-primary-1);*/
 }
 
 .contenidoSecundarioModelo table tr:nth-child(odd) {
@@ -120,6 +120,13 @@
 /*.contenidoSecundarioModelo table tr:hover {
     background-color: var(--color-secondary-2-0);
 }*/
+
+
+/* Sonido */
+
+#sonido {
+    border: none;
+}
 
 
 /* RESPONSIVE */
