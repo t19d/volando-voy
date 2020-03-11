@@ -18,6 +18,13 @@
 }
 
 
+/* Contenido página */
+
+.contenidoPagina {
+    padding-top: 0;
+}
+
+
 /* Filtro lateral */
 
 #filtroLateral {
@@ -364,6 +371,189 @@ section {
 }
 
 
+/* Slideshow */
+
+
+/*
+*
+*
+*
+*/
+
+
+/* Contenedor de Imágenes Slideshow */
+
+.contenedorImagenesSlideshow {
+    padding-top: 7vw;
+    width: 100%;
+}
+
+.imagenesSlideshow {
+    text-align: center;
+}
+
+
+/* Recortar imágenes */
+
+
+/*
+.contenedorImagenesSlideshow .imagenesSlideshow,
+.contenedorImagenesSlideshow .imagenesSlideshow img {
+    height: 100%;
+}*/
+
+.contenedorImagenesSlideshow .imagenesSlideshow img {
+    /*clip-path: inset(25% 0% 25% 0%);*/
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* Siguiente y anterior botones Slideshow */
+
+
+/*.anteriorImagenSlideshow, .siguienteImagenSlideshow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}*/
+
+.anteriorImagenSlideshow:hover {
+    cursor: url("../assets/img/icons/arrow_left_black.png"), pointer;
+}
+
+.siguienteImagenSlideshow:hover {
+    cursor: url("../assets/img/icons/arrow_right_black.png"), pointer;
+}
+
+
+/* Posición del botón "siguienteImagenSlideshow" a la derecha */
+
+.siguienteImagenSlideshow {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Hover, poner fondo negro */
+
+.anteriorImagenSlideshow:hover,
+.siguienteImagenSlideshow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* DEPRECATED */
+
+
+/* Caption text 
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+*/
+
+
+/* Texto números (x/3) */
+
+.textoNumerosSlideshow {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+}
+
+
+/* Puntos de las imágenes disponibles */
+
+#puntosImagenesSlideshow {
+    text-align: center;
+}
+
+
+/* Los puntos de indicación de la imagen */
+
+.puntoPosicionSlideshow {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.imagenActivaSlideshow,
+.puntoPosicionSlideshow:hover {
+    background-color: #717171;
+}
+
+
+/* Animación fade */
+
+.fadeImagenesSlideshow {
+    -webkit-animation-name: fadeImagenesSlideshow;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeImagenesSlideshow;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeImagenesSlideshow {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeImagenesSlideshow {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#izquierda {
+    background-color: black;
+}
+
+.imagenesSlideshow img {
+    width: 30%;
+}
+
+
+/*
+*
+*
+*
+*
+*
+*
+*/
+
+
 /* RESPONSIVE */
 
 
@@ -372,15 +562,22 @@ section {
 @media only screen and (min-width: 1200px) {}
 
 
-/* Tablets en horizonal y pantallas normales 
+/* Tablets en horizonal y pantallas normales */
 
-Este es nuestro estándar
-@media (min-width: 768px) and (max-width: 1199px) {  }*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .contenedorImagenesSlideshow {
+        padding-top: 9.5vw;
+    }
+}
 
 
 /* Móviles en horizontal o tablets en vertical */
 
 @media only screen and (max-width: 767px) {
+    /* Distancia img */
+    .contenedorImagenesSlideshow {
+        padding-top: 15vw;
+    }
     /* Footer */
     .footer {
         display: block;
