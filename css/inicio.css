@@ -1,3 +1,28 @@
+/* Variables colores */
+
+:root {
+    /* PRIMARIO */
+    --color-primary-0: #495353;
+    --color-primary-1: #1f2020;
+    --color-primary-2: #f1da16;
+    /* SECUNDARIO */
+    --color-secondary-1-0: #d5d7d6;
+    --color-secondary-1-1: #6b7577;
+    --color-secondary-1-2: #efe36b;
+    /* TERCIARIO */
+    --color-secondary-2-0: #8d9899;
+    --color-secondary-2-1: #848b8f;
+    --color-secondary-2-2: #f0e897;
+}
+
+
+/* Color de texto para los párrafos */
+
+p {
+    color: var(--color-primary-1);
+}
+
+
 /* Contenedor de Imágenes Slideshow */
 
 .contenedorImagenesSlideshow {
