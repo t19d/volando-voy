@@ -46,7 +46,7 @@ body {
         *display: Ocupa de forma flexible el ancho;
 */
 
-.menuNavegacionPrincipal {
+/*.menuNavegacionPrincipal {
     /*box-shadow: -1px 5px 5px 0px var(--color-secondary-2-2);*/
     width: 100%;
     position: fixed;
@@ -56,15 +56,15 @@ body {
     overflow: hidden;
     background-color: var(--color-primary-1);
     display: flex;
-}
+}*/
 
 /* Titulos menú */
 
-.menuNavegacionPrincipal h2 {
+/*.menuNavegacionPrincipal h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3vw;
     padding: 0 1em;
-}
+}*/
 
 /*
     ---------------FIN (Menú de navegación principal)---------------
@@ -78,7 +78,7 @@ body {
     Normal
 */
 
-.menuNavegacionPrincipal a {
+/*.menuNavegacionPrincipal a {
     color: var(--color-secondary-1-0);
     text-align: center;
     text-decoration: none;
@@ -87,24 +87,24 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.3s;
-}
+}*/
 
 /*
     Página actual
 */
 
-.menuNavegacionPrincipal a.paginaActual {
+/*.menuNavegacionPrincipal a.paginaActual {
     background-color: var(--color-primary-2);
     color: var(--color-primary-1);
-}
+}*/
 
 /*
     Icono responsive
 */
 
-.menuNavegacionPrincipal .iconoMenu {
+/*.menuNavegacionPrincipal .iconoMenu {
     display: none;
-}
+}*/
 
 /*
     ---------------FIN (Enlaces Menú de navegación principal)---------------
@@ -225,19 +225,19 @@ body {
         Hover
     */
     
-    .menuNavegacionPrincipal a:hover {
+    /*.menuNavegacionPrincipal a:hover {
         background-color: var(--color-secondary-2-2);
         color: var(--color-primary-0);
-    }
+    }*/
     
     /*
         Active
     */
     
-    .menuNavegacionPrincipal a:active {
+    /*.menuNavegacionPrincipal a:active {
         background-color: var(--color-secondary-1-2);
         color: var(--color-primary-1);
-    }
+    }*/
 }
 
 /* Tablets en horizonal y pantallas normales 
@@ -248,29 +248,29 @@ Este es nuestro estándar*/
         Hover
     */
     
-    .menuNavegacionPrincipal a:hover {
+    /*.menuNavegacionPrincipal a:hover {
         background-color: var(--color-secondary-2-2);
         color: var(--color-primary-0);
-    }
+    }*/
     
     /*
         Active
     */
     
-    .menuNavegacionPrincipal a:active {
+    /*.menuNavegacionPrincipal a:active {
         background-color: var(--color-secondary-1-2);
         color: var(--color-primary-1);
-    }
+    }*/
 }
 
 /* Móviles en horizontal o tablets en vertical */
 
 @media only screen and (max-width: 767px) {
-    .menuNavegacionPrincipal {
-        display: block;
-    }
     body {
         font-size: 3vw;
+    }
+    /*.menuNavegacionPrincipal {
+        display: block;
     }
     .menuNavegacionPrincipal h2 {
         font-size: 3vw;
@@ -286,7 +286,7 @@ Este es nuestro estándar*/
     }
     .menuNavegacionPrincipal .iconoMenu img {
         float: left;
-    }
+    }*/
     /*
     ---------------Mostrar Menú de navegación principal
     */
