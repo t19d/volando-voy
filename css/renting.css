@@ -380,7 +380,7 @@ Este es nuestro estándar
 
 /* Móviles en horizontal o tablets en vertical */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 950px) {
     /* Footer */
     .footer {
         display: block;

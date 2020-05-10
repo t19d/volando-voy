@@ -373,7 +373,10 @@ section {
 
 /* Slideshow */
 
-
+#carouselOfertasIndicators p {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
 /*
 *
 *
@@ -382,7 +385,7 @@ section {
 
 
 /* Contenedor de Imágenes Slideshow */
-
+/*
 .contenedorImagenesSlideshow {
     padding-top: 7vw;
     width: 100%;
@@ -390,7 +393,7 @@ section {
 
 .imagenesSlideshow {
     text-align: center;
-}
+}*/
 
 
 /* Recortar imágenes */
@@ -402,11 +405,11 @@ section {
     height: 100%;
 }*/
 
-.contenedorImagenesSlideshow .imagenesSlideshow img {
-    /*clip-path: inset(25% 0% 25% 0%);*/
+/*.contenedorImagenesSlideshow .imagenesSlideshow img {
+    clip-path: inset(25% 0% 25% 0%);
     object-fit: cover;
     object-position: center center;
-}
+}*/
 
 
 /* Siguiente y anterior botones Slideshow */
@@ -427,29 +430,29 @@ section {
     user-select: none;
 }*/
 
-.anteriorImagenSlideshow:hover {
+/*.anteriorImagenSlideshow:hover {
     cursor: url("../assets/img/icons/arrow_left_black.png"), pointer;
 }
 
 .siguienteImagenSlideshow:hover {
     cursor: url("../assets/img/icons/arrow_right_black.png"), pointer;
-}
+}*/
 
 
 /* Posición del botón "siguienteImagenSlideshow" a la derecha */
 
-.siguienteImagenSlideshow {
+/*.siguienteImagenSlideshow {
     right: 0;
     border-radius: 3px 0 0 3px;
-}
+}*/
 
 
 /* Hover, poner fondo negro */
 
-.anteriorImagenSlideshow:hover,
+/*.anteriorImagenSlideshow:hover,
 .siguienteImagenSlideshow:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
+}*/
 
 
 /* DEPRECATED */
@@ -472,26 +475,26 @@ section {
 
 /* Texto números (x/3) */
 
-.textoNumerosSlideshow {
+/*.textoNumerosSlideshow {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
     background-color: #000;
-}
+}*/
 
 
 /* Puntos de las imágenes disponibles */
 
-#puntosImagenesSlideshow {
+/*#puntosImagenesSlideshow {
     text-align: center;
-}
+}*/
 
 
 /* Los puntos de indicación de la imagen */
 
-.puntoPosicionSlideshow {
+/*.puntoPosicionSlideshow {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -505,12 +508,12 @@ section {
 .imagenActivaSlideshow,
 .puntoPosicionSlideshow:hover {
     background-color: #717171;
-}
+}*/
 
 
 /* Animación fade */
 
-.fadeImagenesSlideshow {
+/*.fadeImagenesSlideshow {
     -webkit-animation-name: fadeImagenesSlideshow;
     -webkit-animation-duration: 1.5s;
     animation-name: fadeImagenesSlideshow;
@@ -541,7 +544,7 @@ section {
 
 .imagenesSlideshow img {
     width: 30%;
-}
+}*/
 
 
 /*
@@ -573,7 +576,7 @@ section {
 
 /* Móviles en horizontal o tablets en vertical */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 950px) {
     /* Distancia img */
     .contenedorImagenesSlideshow {
         padding-top: 15vw;
